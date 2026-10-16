@@ -1,0 +1,534 @@
+
+:root {
+    --green: #278641;
+    --green-dark: #123c2b;
+    --green-light: #eaf5ec;
+    --black: #101914;
+    --white: #ffffff;
+    --gray: #647168;
+    --background: #f7f9f7;
+    --border: #e2e9e3;
+    --shadow: 0 12px 35px rgba(18, 60, 43, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--black);
+    background: var(--white);
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input, textarea {
+    font: inherit;
+}
+
+.header {
+    min-height: 82px;
+    padding: 15px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background: var(--black);
+    color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 27px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.logo span {
+    color: #79d65c;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav a {
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.nav a:hover {
+    color: #79d65c;
+}
+
+.nav a:last-child {
+    background: var(--green);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 30px;
+}
+
+.menu-toggle {
+    display: none;
+    color: white;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.hero {
+    min-height: 520px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background: var(--green-dark);
+    color: white;
+    overflow: hidden;
+}
+
+.hero-content {
+    padding: 70px 0 70px 12%;
+    position: relative;
+    z-index: 1;
+}
+
+.eyebrow {
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.hero .eyebrow {
+    color: #a4e58e;
+}
+
+.hero h1 {
+    font-size: clamp(34px, 4vw, 55px);
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #83dc61;
+}
+
+.hero-content > p:not(.eyebrow) {
+    color: #e0e9e2;
+    max-width: 480px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    border: 0;
+    background: var(--green);
+    color: white;
+    padding: 14px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.button:hover {
+    background: #1d6b32;
+    transform: translateY(-2px);
+}
+
+.hero-image {
+    min-height: 520px;
+    background:
+        linear-gradient(90deg, var(--green-dark), transparent 35%),
+        url("https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=85")
+        center / cover no-repeat;
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 26px 7%;
+    gap: 22px;
+    background: white;
+    box-shadow: var(--shadow);
+}
+
+.benefits > div {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 25px;
+}
+
+.benefits strong,
+.benefits small {
+    display: block;
+}
+
+.benefits strong {
+    font-size: 13px;
+    color: var(--black);
+}
+
+.benefits small {
+    font-size: 12px;
+    color: var(--gray);
+}
+
+.section {
+    padding: 85px 8%;
+}
+
+.section-heading {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.2;
+    margin: 12px 0;
+}
+
+.section-heading h2 span {
+    color: var(--green);
+}
+
+.section-heading > p:last-child {
+    color: var(--gray);
+}
+
+.about-grid,
+.mission-grid,
+.products-grid,
+.services-grid,
+.team-grid,
+.contact-grid {
+    display: grid;
+    gap: 24px;
+}
+
+.about-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info-card,
+.mission-grid article,
+.product-card,
+.services-grid article,
+.team-card,
+.contact-card {
+    padding: 30px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+}
+
+.info-card h3,
+.mission-grid h3,
+.product-card h3,
+.services-grid h3,
+.team-card h3,
+.contact-card h3 {
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.info-card p,
+.mission-grid p,
+.product-card p,
+.services-grid p,
+.contact-card p,
+.team-card p {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.values-section {
+    background: var(--background);
+}
+
+.mission-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.products-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.product-card {
+    padding: 25px;
+    transition: transform 0.2s;
+}
+
+.product-card:hover,
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-emoji {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.services-section {
+    background: var(--green-dark);
+    color: white;
+}
+
+.services-section .section-heading h2 {
+    color: white;
+}
+
+.services-section .section-heading p {
+    color: #d4e5d7;
+}
+
+.services-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.services-grid article {
+    color: var(--black);
+}
+
+.team-section {
+    background: var(--background);
+}
+
+.team-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.team-card {
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.team-avatar {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    margin: 0 auto 18px;
+    display: grid;
+    place-items: center;
+    background: var(--green-dark);
+    color: white;
+    font-size: 29px;
+    font-weight: bold;
+    border: 5px solid var(--green-light);
+}
+
+.team-card h3 {
+    font-size: 16px;
+}
+
+.team-card p {
+    font-size: 13px;
+}
+
+.contact-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contact-card {
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.contact-card small {
+    display: block;
+    margin-top: 10px;
+    color: var(--gray);
+    font-size: 11px;
+}
+
+.contact-form {
+    max-width: 650px;
+    margin: 45px auto 0;
+    padding: 35px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+}
+
+.contact-form h3 {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d6dfd8;
+    border-radius: 9px;
+    background: #fcfdfc;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--green);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    margin-top: 20px;
+}
+
+.contact-form > small {
+    display: block;
+    margin-top: 12px;
+    color: var(--gray);
+    font-size: 12px;
+}
+
+.form-status {
+    margin-top: 12px;
+    color: var(--green);
+    overflow-wrap: anywhere;
+}
+
+.footer {
+    padding: 40px 8%;
+    background: var(--black);
+    color: white;
+    text-align: center;
+}
+
+.footer .logo {
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.footer > p {
+    color: #d0dbd2;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 22px 0;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #83dc61;
+}
+
+.footer .copyright {
+    border-top: 1px solid #334138;
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+    .benefits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .products-grid,
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .header {
+        min-height: 70px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 22px 7%;
+        background: var(--black);
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+    .nav a {
+        padding: 8px 0;
+    }
+
+    .nav a:last-child {
+        text-align: center;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        padding: 60px 8%;
+    }
+
+    .hero-image {
+        min-height: 280px;
+    }
+
+    .benefits,
+    .about-grid,
+    .mission-grid,
+    .products-grid,
+    .services-grid,
+    .team-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 60px 7%;
+    }
+
+    .contact-form {
+        padding: 24px;
+    }
+}
