@@ -835,3 +835,17 @@ body{background:#03120d;color:#f2fff5}
  .product-card,.tip-card,.team-card,.services-grid article{border-radius:16px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.product-card,.tip-card,.team-card,.services-grid article,.contact-card,.button{transition:none}}
+
+
+/* Legibilidad reforzada: Preguntas frecuentes y textos sobre fondos oscuros */
+.faq-section{background:linear-gradient(145deg,#04170f,#0a2a1b)!important;color:#f5fff7!important}
+.faq-section .section-heading h2{color:#f5fff7!important;font-weight:900!important;text-shadow:0 2px 14px rgba(0,0,0,.22)}
+.faq-section .section-heading h2 span{color:#86ff9f!important;font-weight:950!important}
+.faq-section .section-heading .eyebrow{color:#a9ffbb!important;font-weight:900}
+.faq-section .section-heading>p:last-child{color:#d0e7d7!important;font-weight:600}
+.faq-list details{background:linear-gradient(145deg,#103b26,#082719)!important;border:1px solid rgba(110,255,153,.35)!important;color:#f5fff7!important;box-shadow:0 10px 26px rgba(0,0,0,.22)!important}
+.faq-list summary{color:#ffffff!important;font-weight:850!important;font-size:16px;text-shadow:0 1px 5px rgba(0,0,0,.25)}
+.faq-list summary:after{color:#8dffab!important;font-weight:900}
+.faq-list details p{color:#d8eee0!important;font-weight:500;line-height:1.7}
+.footer-links a{font-weight:700}
+.section-heading h2{font-weight:900}
