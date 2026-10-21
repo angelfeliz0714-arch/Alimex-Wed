@@ -849,3 +849,9 @@ body{background:#03120d;color:#f2fff5}
 .faq-list details p{color:#d8eee0!important;font-weight:500;line-height:1.7}
 .footer-links a{font-weight:700}
 .section-heading h2{font-weight:900}
+
+
+/* Beneficios destacados: títulos y descripciones legibles en negrita */
+.benefits>div>span strong{display:block!important;color:#f4fff7!important;font-weight:900!important;font-size:15px!important;line-height:1.35;text-shadow:0 1px 5px rgba(0,0,0,.2)}
+.benefits>div>span small{display:block!important;color:#cce7d4!important;font-weight:750!important;font-size:12px!important;line-height:1.5;margin-top:3px}
+.benefits>div{color:#a0ffb6}
