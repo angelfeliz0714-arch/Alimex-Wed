@@ -20,7 +20,10 @@
             <a href="#inicio">Inicio</a>
             <a href="#nosotros">Nosotros</a>
             <a href="#productos">Productos</a>
+            <a href="#categorias">Categorías</a>
             <a href="#servicios">Servicios</a>
+            <a href="#consejos">Consejos</a>
+            <a href="#preguntas">FAQ</a>
             <a href="#equipo">Equipo</a>
             <a href="#contacto">Contacto</a>
         </nav>
@@ -63,14 +66,25 @@
         <section class="section" id="productos">
             <div class="section-heading"><p class="eyebrow">NUESTRO CATÁLOGO</p><h2>Productos que <span>distribuimos</span></h2></div>
             <div class="products-grid">
-                <article class="product-card"><div class="product-emoji">🥬</div><h3>Frutas y verduras</h3><p>Productos frescos para comercios y restaurantes.</p></article>
-                <article class="product-card"><div class="product-emoji">🥛</div><h3>Productos lácteos</h3><p>Leche, queso y otros productos lácteos.</p></article>
-                <article class="product-card"><div class="product-emoji">🌾</div><h3>Granos y cereales</h3><p>Arroz, habichuelas, avena y productos similares.</p></article>
-                <article class="product-card"><div class="product-emoji">🥫</div><h3>Alimentos envasados</h3><p>Alimentos empacados para diferentes necesidades.</p></article>
-                <article class="product-card"><div class="product-emoji">🍗</div><h3>Proteínas y congelados</h3><p>Opciones para complementar el abastecimiento de tu negocio.</p></article>
-                <article class="product-card"><div class="product-emoji">🧃</div><h3>Bebidas</h3><p>Alternativas para hogares, comercios y establecimientos.</p></article>
+                <article class="product-card" id="cat-frutas"><div class="product-emoji">🥬</div><h3>Frutas y verduras</h3><p>Productos frescos para comercios y restaurantes.</p><a class="text-link" href="#contacto">Consultar esta categoría →</a></article>
+                <article class="product-card" id="cat-lacteos"><div class="product-emoji">🥛</div><h3>Productos lácteos</h3><p>Leche, queso y otros productos lácteos.</p><a class="text-link" href="#contacto">Consultar esta categoría →</a></article>
+                <article class="product-card" id="cat-granos"><div class="product-emoji">🌾</div><h3>Granos y cereales</h3><p>Arroz, habichuelas, avena y productos similares.</p><a class="text-link" href="#contacto">Consultar esta categoría →</a></article>
+                <article class="product-card" id="cat-envasados"><div class="product-emoji">🥫</div><h3>Alimentos envasados</h3><p>Alimentos empacados para diferentes necesidades.</p><a class="text-link" href="#contacto">Consultar esta categoría →</a></article>
+                <article class="product-card" id="cat-congelados"><div class="product-emoji">🍗</div><h3>Proteínas y congelados</h3><p>Opciones para complementar el abastecimiento de tu negocio.</p><a class="text-link" href="#contacto">Consultar esta categoría →</a></article>
+                <article class="product-card" id="cat-bebidas"><div class="product-emoji">🧃</div><h3>Bebidas</h3><p>Alternativas para hogares, comercios y establecimientos.</p><a class="text-link" href="#contacto">Consultar esta categoría →</a></article>
             </div>
             <p class="catalog-note">¿Buscas un producto específico? <a href="#contacto">Consulta disponibilidad con nuestro equipo.</a></p>
+        </section>
+        <section class="section category-showcase" id="categorias">
+            <div class="section-heading"><p class="eyebrow">EXPLORA ALIMEX</p><h2>Encuentra lo que <span>buscas</span></h2><p>Selecciona una categoría para ir directamente a sus detalles en el catálogo.</p></div>
+            <div class="category-photo-grid">
+                <a class="category-photo-card" href="#cat-frutas"><img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=85" alt="Frutas y verduras frescas" loading="lazy"><span>Frutas y verduras</span><small>Ver categoría ↗</small></a>
+                <a class="category-photo-card" href="#cat-lacteos"><img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=900&q=85" alt="Productos lácteos" loading="lazy"><span>Lácteos</span><small>Ver categoría ↗</small></a>
+                <a class="category-photo-card" href="#cat-granos"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=85" alt="Pan, granos y cereales" loading="lazy"><span>Granos y cereales</span><small>Ver categoría ↗</small></a>
+                <a class="category-photo-card" href="#cat-envasados"><img src="https://images.unsplash.com/photo-1604719312566-8912e9c8a213?auto=format&fit=crop&w=900&q=85" alt="Alimentos empacados en tienda" loading="lazy"><span>Envasados</span><small>Ver categoría ↗</small></a>
+                <a class="category-photo-card" href="#cat-congelados"><img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=900&q=85" alt="Proteínas y alimentos" loading="lazy"><span>Proteínas y congelados</span><small>Ver categoría ↗</small></a>
+                <a class="category-photo-card" href="#cat-bebidas"><img src="https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?auto=format&fit=crop&w=900&q=85" alt="Bebidas refrescantes" loading="lazy"><span>Bebidas</span><small>Ver categoría ↗</small></a>
+            </div>
         </section>
         <section class="section services-section" id="servicios">
             <div class="section-heading"><p class="eyebrow">LO QUE HACEMOS</p><h2>Nuestros servicios</h2></div>
@@ -78,6 +92,19 @@
                 <article><h3>📦 Recepción</h3><p>Recibimos y verificamos los productos.</p></article>
                 <article><h3>🏬 Almacenamiento</h3><p>Organizamos los productos para su conservación.</p></article>
                 <article><h3>🚚 Distribución</h3><p>Coordinamos las entregas a nuestros clientes.</p></article>
+            </div>
+            <div class="business-paths">
+                <a href="#productos"><span>01</span><strong>Explorar el catálogo</strong><small>Revisa las familias de productos disponibles en la página.</small><b>Ir al catálogo →</b></a>
+                <a href="#contacto"><span>02</span><strong>Solicitar información</strong><small>Prepara una consulta para el equipo de Alimex.</small><b>Contactar →</b></a>
+                <a href="#preguntas"><span>03</span><strong>Resolver dudas</strong><small>Encuentra respuestas rápidas sobre productos y atención.</small><b>Ver preguntas →</b></a>
+            </div>
+        </section>
+        <section class="section tips-section" id="consejos">
+            <div class="section-heading"><p class="eyebrow">INFORMACIÓN ÚTIL</p><h2>Consejos para cuidar los <span>alimentos</span></h2><p>Ideas generales para organizar y conservar tus compras. Sigue siempre las indicaciones de la etiqueta y las recomendaciones sanitarias aplicables.</p></div>
+            <div class="tips-grid">
+                <article class="tip-card"><img src="https://images.unsplash.com/photo-1584473457409-ae5c91d7a7b4?auto=format&fit=crop&w=900&q=85" alt="Verduras frescas organizadas" loading="lazy"><div><span>01 · FRESCURA</span><h3>Organiza los productos frescos</h3><p>Revisa los alimentos al recibirlos y separa los que necesiten refrigeración de los que se conservan a temperatura ambiente.</p><a href="#cat-frutas">Explorar frutas y verduras →</a></div></article>
+                <article class="tip-card"><img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&w=900&q=85" alt="Alimentos almacenados" loading="lazy"><div><span>02 · ALMACENAMIENTO</span><h3>Cuida el almacenamiento</h3><p>Mantén los alimentos en condiciones adecuadas, evita la contaminación cruzada y respeta las instrucciones de conservación del empaque.</p><a href="#servicios">Conocer servicios →</a></div></article>
+                <article class="tip-card"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=900&q=85" alt="Preparación organizada de alimentos" loading="lazy"><div><span>03 · PLANIFICACIÓN</span><h3>Planifica tus compras</h3><p>Haz una lista según las necesidades de tu hogar o negocio y confirma disponibilidad antes de coordinar un pedido.</p><a href="#contacto">Consultar con Alimex →</a></div></article>
             </div>
         </section>
         <section class="section faq-section" id="preguntas">
