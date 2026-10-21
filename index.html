@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Alimex: distribución responsable de alimentos, calidad y atención personalizada en República Dominicana.">
     <title>Alimex | Distribución de Alimentos</title>
-    <link rel="stylesheet" href="styles.css?v=20261021intro2">
+    <link rel="stylesheet" href="styles.css?v=20261021gamefix3">
     <style>
         .team-grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
         @media (max-width: 700px) { .team-grid { grid-template-columns: 1fr !important; } }
     </style>
-    <script src="script.js?v=20261021intro2" defer></script>
+    <script src="script.js?v=20261021gamefix3" defer></script>
 </head>
 <body>
     <div class="alimex-intro" id="alimex-intro" aria-label="Bienvenido a Alimex"><div class="intro-portal"><div class="intro-ring"></div><div class="intro-core">A<span>+</span></div></div><div class="intro-wordmark">ALIMEX</div><p>CALIDAD QUE LLEGA A TI</p></div>
@@ -39,6 +39,7 @@
                 <h1>Alimentos de calidad,<br>hasta donde los <span>necesites.</span></h1>
                 <p>Conectamos alimentos de calidad con negocios y familias, ofreciendo confianza, frescura y entregas responsables.</p>
                 <a href="#productos" class="button">Explorar catálogo →</a>
+                <a href="#juego-alimentos" class="hero-secondary game-hero-link">🎮 Jugar reto saludable</a>
                 <a href="#contacto" class="hero-secondary">Solicitar información</a>
             </div>
             <div class="hero-image" role="img" aria-label="Alimentos frescos"></div>
@@ -71,12 +72,12 @@
         <section class="section" id="productos">
             <div class="section-heading"><p class="eyebrow">NUESTRO CATÁLOGO</p><h2>Productos que <span>distribuimos</span></h2></div>
             <div class="products-grid">
-                <article class="product-card" id="cat-frutas"><img class="product-photo" src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" alt="Frutas y verduras frescas" loading="lazy"><div class="product-emoji">🥬</div><h3>Frutas y verduras</h3><p>Productos frescos para comercios y restaurantes.</p><a class="text-link" href="#contacto">Consultar esta categoría →</a></article>
-                <article class="product-card" id="cat-lacteos"><img class="product-photo" src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80" alt="Productos lácteos" loading="lazy"><div class="product-emoji">🥛</div><h3>Productos lácteos</h3><p>Leche, queso y otros productos lácteos.</p><a class="text-link" href="#contacto">Consultar esta categoría →</a></article>
-                <article class="product-card" id="cat-granos"><img class="product-photo" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Granos y cereales" loading="lazy"><div class="product-emoji">🌾</div><h3>Granos y cereales</h3><p>Arroz, habichuelas, avena y productos similares.</p><a class="text-link" href="#contacto">Consultar esta categoría →</a></article>
-                <article class="product-card" id="cat-envasados"><img class="product-photo" src="https://images.unsplash.com/photo-1543168256-418811576931?auto=format&fit=crop&w=600&q=80" alt="Alimentos envasados" loading="lazy"><div class="product-emoji">🥫</div><h3>Alimentos envasados</h3><p>Alimentos empacados para diferentes necesidades.</p><a class="text-link" href="#contacto">Consultar esta categoría →</a></article>
-                <article class="product-card" id="cat-congelados"><img class="product-photo" src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=600&q=80" alt="Proteínas y congelados" loading="lazy"><div class="product-emoji">🍗</div><h3>Proteínas y congelados</h3><p>Opciones para complementar el abastecimiento de tu negocio.</p><a class="text-link" href="#contacto">Consultar esta categoría →</a></article>
-                <article class="product-card" id="cat-bebidas"><img class="product-photo" src="https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?auto=format&fit=crop&w=600&q=80" alt="Bebidas" loading="lazy"><div class="product-emoji">🧃</div><h3>Bebidas</h3><p>Alternativas para hogares, comercios y establecimientos.</p><a class="text-link" href="#contacto">Consultar esta categoría →</a></article>
+                <article class="product-card" id="cat-frutas"><img class="product-photo" src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" alt="Frutas y verduras frescas" loading="lazy" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';var p=document.createElement('div');p.className='image-fallback';p.setAttribute('role','img');p.setAttribute('aria-label','Frutas y verduras frescas');p.innerHTML='<span>🥬</span><small>Frutas y verduras frescas</small>';this.replaceWith(p)}"><div class="product-emoji">🥬</div><h3>Frutas y verduras</h3><p>Productos frescos para comercios y restaurantes.</p><a class="text-link" href="#contacto">Consultar esta categoría →</a></article>
+                <article class="product-card" id="cat-lacteos"><img class="product-photo" src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80" alt="Productos lácteos" loading="lazy" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';var p=document.createElement('div');p.className='image-fallback';p.setAttribute('role','img');p.setAttribute('aria-label','Productos lácteos');p.innerHTML='<span>🥛</span><small>Productos lácteos</small>';this.replaceWith(p)}"><div class="product-emoji">🥛</div><h3>Productos lácteos</h3><p>Leche, queso y otros productos lácteos.</p><a class="text-link" href="#contacto">Consultar esta categoría →</a></article>
+                <article class="product-card" id="cat-granos"><img class="product-photo" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Granos y cereales" loading="lazy" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';var p=document.createElement('div');p.className='image-fallback';p.setAttribute('role','img');p.setAttribute('aria-label','Granos y cereales');p.innerHTML='<span>🌾</span><small>Granos y cereales</small>';this.replaceWith(p)}"><div class="product-emoji">🌾</div><h3>Granos y cereales</h3><p>Arroz, habichuelas, avena y productos similares.</p><a class="text-link" href="#contacto">Consultar esta categoría →</a></article>
+                <article class="product-card" id="cat-envasados"><img class="product-photo" src="https://images.unsplash.com/photo-1543168256-418811576931?auto=format&fit=crop&w=600&q=80" alt="Alimentos envasados" loading="lazy" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';var p=document.createElement('div');p.className='image-fallback';p.setAttribute('role','img');p.setAttribute('aria-label','Alimentos envasados');p.innerHTML='<span>🥫</span><small>Alimentos envasados</small>';this.replaceWith(p)}"><div class="product-emoji">🥫</div><h3>Alimentos envasados</h3><p>Alimentos empacados para diferentes necesidades.</p><a class="text-link" href="#contacto">Consultar esta categoría →</a></article>
+                <article class="product-card" id="cat-congelados"><img class="product-photo" src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=600&q=80" alt="Proteínas y congelados" loading="lazy" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';var p=document.createElement('div');p.className='image-fallback';p.setAttribute('role','img');p.setAttribute('aria-label','Proteínas y congelados');p.innerHTML='<span>🍗</span><small>Proteínas y congelados</small>';this.replaceWith(p)}"><div class="product-emoji">🍗</div><h3>Proteínas y congelados</h3><p>Opciones para complementar el abastecimiento de tu negocio.</p><a class="text-link" href="#contacto">Consultar esta categoría →</a></article>
+                <article class="product-card" id="cat-bebidas"><img class="product-photo" src="https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?auto=format&fit=crop&w=600&q=80" alt="Bebidas" loading="lazy" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';var p=document.createElement('div');p.className='image-fallback';p.setAttribute('role','img');p.setAttribute('aria-label','Bebidas');p.innerHTML='<span>🧃</span><small>Bebidas</small>';this.replaceWith(p)}"><div class="product-emoji">🧃</div><h3>Bebidas</h3><p>Alternativas para hogares, comercios y establecimientos.</p><a class="text-link" href="#contacto">Consultar esta categoría →</a></article>
             </div>
             <p class="catalog-note">¿Buscas un producto específico? <a href="#contacto">Consulta disponibilidad con nuestro equipo.</a></p>
         </section>
@@ -105,9 +106,9 @@
         <section class="section tips-section" id="consejos">
             <div class="section-heading"><p class="eyebrow">INFORMACIÓN ÚTIL</p><h2>Consejos para cuidar los <span>alimentos</span></h2><p>Ideas generales para organizar y conservar tus compras. Sigue siempre las indicaciones de la etiqueta y las recomendaciones sanitarias aplicables.</p></div>
             <div class="tips-grid">
-                <article class="tip-card"><img src="https://images.unsplash.com/photo-1584473457409-ae5c91d7a7b4?auto=format&fit=crop&w=900&q=85" alt="Verduras frescas organizadas" loading="lazy"><div><span>01 · FRESCURA</span><h3>Organiza los productos frescos</h3><p>Revisa los alimentos al recibirlos y separa los que necesiten refrigeración de los que se conservan a temperatura ambiente.</p><a href="#cat-frutas">Explorar frutas y verduras →</a></div></article>
-                <article class="tip-card"><img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&w=900&q=85" alt="Alimentos almacenados" loading="lazy"><div><span>02 · ALMACENAMIENTO</span><h3>Cuida el almacenamiento</h3><p>Mantén los alimentos en condiciones adecuadas, evita la contaminación cruzada y respeta las instrucciones de conservación del empaque.</p><a href="#servicios">Conocer servicios →</a></div></article>
-                <article class="tip-card"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=900&q=85" alt="Preparación organizada de alimentos" loading="lazy"><div><span>03 · PLANIFICACIÓN</span><h3>Planifica tus compras</h3><p>Haz una lista según las necesidades de tu hogar o negocio y confirma disponibilidad antes de coordinar un pedido.</p><a href="#contacto">Consultar con Alimex →</a></div></article>
+                <article class="tip-card"><img src="https://images.unsplash.com/photo-1584473457409-ae5c91d7a7b4?auto=format&fit=crop&w=900&q=85" alt="Verduras frescas organizadas" loading="lazy" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';var p=document.createElement('div');p.className='image-fallback';p.setAttribute('role','img');p.setAttribute('aria-label','Verduras frescas organizadas');p.innerHTML='<span>🥦</span><small>Verduras frescas organizadas</small>';this.replaceWith(p)}"><div><span>01 · FRESCURA</span><h3>Organiza los productos frescos</h3><p>Revisa los alimentos al recibirlos y separa los que necesiten refrigeración de los que se conservan a temperatura ambiente.</p><a href="#cat-frutas">Explorar frutas y verduras →</a></div></article>
+                <article class="tip-card"><img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&w=900&q=85" alt="Alimentos almacenados" loading="lazy" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';var p=document.createElement('div');p.className='image-fallback';p.setAttribute('role','img');p.setAttribute('aria-label','Alimentos almacenados');p.innerHTML='<span>📦</span><small>Alimentos almacenados</small>';this.replaceWith(p)}"><div><span>02 · ALMACENAMIENTO</span><h3>Cuida el almacenamiento</h3><p>Mantén los alimentos en condiciones adecuadas, evita la contaminación cruzada y respeta las instrucciones de conservación del empaque.</p><a href="#servicios">Conocer servicios →</a></div></article>
+                <article class="tip-card"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=900&q=85" alt="Preparación organizada de alimentos" loading="lazy" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';var p=document.createElement('div');p.className='image-fallback';p.setAttribute('role','img');p.setAttribute('aria-label','Preparación organizada de alimentos');p.innerHTML='<span>🍽️</span><small>Preparación organizada de alimentos</small>';this.replaceWith(p)}"><div><span>03 · PLANIFICACIÓN</span><h3>Planifica tus compras</h3><p>Haz una lista según las necesidades de tu hogar o negocio y confirma disponibilidad antes de coordinar un pedido.</p><a href="#contacto">Consultar con Alimex →</a></div></article>
             </div>
         </section>
         <section class="section food-game-section" id="juego-alimentos">
@@ -137,27 +138,27 @@
             </div>
             <div class="team-grid">
                 <article class="team-card">
-                    <img class="team-photo" src="845457746_1101589266060737_3366460002558829633_n.jpg" alt="Emmanuel Dorville Gutiérrez" loading="lazy">
+                    <img class="team-photo" src="845457746_1101589266060737_3366460002558829633_n.jpg" alt="Emmanuel Dorville Gutiérrez" loading="lazy" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';var p=document.createElement('div');p.className='image-fallback';p.setAttribute('role','img');p.setAttribute('aria-label','Emmanuel Dorville Gutiérrez');p.innerHTML='<span>🌿</span><small>Emmanuel Dorville Gutiérrez</small>';this.replaceWith(p)}">
                     <h3>Emmanuel Dorville Gutiérrez</h3>
                 </article>
                 <article class="team-card">
-                    <img class="team-photo" src="WhatsApp%20Image%202026-10-20%20at%202.13.17%20PM.jpeg" alt="Karen Guerrero" loading="lazy">
+                    <img class="team-photo" src="WhatsApp%20Image%202026-10-20%20at%202.13.17%20PM.jpeg" alt="Karen Guerrero" loading="lazy" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';var p=document.createElement('div');p.className='image-fallback';p.setAttribute('role','img');p.setAttribute('aria-label','Karen Guerrero');p.innerHTML='<span>🌿</span><small>Karen Guerrero</small>';this.replaceWith(p)}">
                     <h3>Karen Guerrero</h3>
                 </article>
                 <article class="team-card">
-                    <img class="team-photo" src="WhatsApp%20Image%202026-10-20%20at%202.13.17%20PM%20(1).jpeg" alt="Disleyni Batista" loading="lazy">
+                    <img class="team-photo" src="WhatsApp%20Image%202026-10-20%20at%202.13.17%20PM%20(1).jpeg" alt="Disleyni Batista" loading="lazy" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';var p=document.createElement('div');p.className='image-fallback';p.setAttribute('role','img');p.setAttribute('aria-label','Disleyni Batista');p.innerHTML='<span>🌿</span><small>Disleyni Batista</small>';this.replaceWith(p)}">
                     <h3>Disleyni Batista</h3>
                 </article>
                 <article class="team-card">
-                    <img class="team-photo" src="WhatsApp%20Image%202026-10-20%20at%2011.03.15%20PM%20(1).jpeg" alt="Brittany Vargas Vilorio" loading="lazy">
+                    <img class="team-photo" src="WhatsApp%20Image%202026-10-20%20at%2011.03.15%20PM%20(1).jpeg" alt="Brittany Vargas Vilorio" loading="lazy" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';var p=document.createElement('div');p.className='image-fallback';p.setAttribute('role','img');p.setAttribute('aria-label','Brittany Vargas Vilorio');p.innerHTML='<span>🌿</span><small>Brittany Vargas Vilorio</small>';this.replaceWith(p)}">
                     <h3>Brittany Vargas Vilorio</h3>
                 </article>
                 <article class="team-card">
-                    <img class="team-photo" src="WhatsApp%20Image%202026-10-20%20at%2011.11.09%20PM.jpeg" alt="Valerie Gabriela Martinez Amador" loading="lazy">
+                    <img class="team-photo" src="WhatsApp%20Image%202026-10-20%20at%2011.11.09%20PM.jpeg" alt="Valerie Gabriela Martinez Amador" loading="lazy" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';var p=document.createElement('div');p.className='image-fallback';p.setAttribute('role','img');p.setAttribute('aria-label','Valerie Gabriela Martinez Amador');p.innerHTML='<span>🌿</span><small>Valerie Gabriela Martinez Amador</small>';this.replaceWith(p)}">
                     <h3>Valerie Gabriela Martinez Amador</h3>
                 </article>
                 <article class="team-card">
-                    <img class="team-photo" src="WhatsApp%20Image%202026-10-20%20at%2011.54.37%20PM.jpeg" alt="Elianny Johanna Toribio" loading="lazy">
+                    <img class="team-photo" src="WhatsApp%20Image%202026-10-20%20at%2011.54.37%20PM.jpeg" alt="Elianny Johanna Toribio" loading="lazy" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';var p=document.createElement('div');p.className='image-fallback';p.setAttribute('role','img');p.setAttribute('aria-label','Elianny Johanna Toribio');p.innerHTML='<span>🌿</span><small>Elianny Johanna Toribio</small>';this.replaceWith(p)}">
                     <h3>Elianny Johanna Toribio</h3>
                 </article>
             </div>
