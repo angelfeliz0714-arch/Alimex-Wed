@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Alimex: distribución de alimentos de calidad.">
+    <meta name="description" content="Alimex: distribución responsable de alimentos, calidad y atención personalizada en República Dominicana.">
     <title>Alimex | Distribución de Alimentos</title>
     <link rel="stylesheet" href="styles.css">
     <style>
@@ -21,6 +21,7 @@
             <a href="#nosotros">Nosotros</a>
             <a href="#productos">Productos</a>
             <a href="#servicios">Servicios</a>
+            <a href="#equipo">Equipo</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </header>
@@ -30,7 +31,8 @@
                 <p class="eyebrow">CALIDAD QUE LLEGA A TI</p>
                 <h1>Alimentos de calidad,<br>hasta donde los <span>necesites.</span></h1>
                 <p>Conectamos alimentos de calidad con negocios y familias, ofreciendo confianza, frescura y entregas responsables.</p>
-                <a href="#nosotros" class="button">Conoce más →</a>
+                <a href="#productos" class="button">Explorar catálogo →</a>
+                <a href="#contacto" class="hero-secondary">Solicitar información</a>
             </div>
             <div class="hero-image" role="img" aria-label="Alimentos frescos"></div>
         </section>
@@ -65,7 +67,10 @@
                 <article class="product-card"><div class="product-emoji">🥛</div><h3>Productos lácteos</h3><p>Leche, queso y otros productos lácteos.</p></article>
                 <article class="product-card"><div class="product-emoji">🌾</div><h3>Granos y cereales</h3><p>Arroz, habichuelas, avena y productos similares.</p></article>
                 <article class="product-card"><div class="product-emoji">🥫</div><h3>Alimentos envasados</h3><p>Alimentos empacados para diferentes necesidades.</p></article>
+                <article class="product-card"><div class="product-emoji">🍗</div><h3>Proteínas y congelados</h3><p>Opciones para complementar el abastecimiento de tu negocio.</p></article>
+                <article class="product-card"><div class="product-emoji">🧃</div><h3>Bebidas</h3><p>Alternativas para hogares, comercios y establecimientos.</p></article>
             </div>
+            <p class="catalog-note">¿Buscas un producto específico? <a href="#contacto">Consulta disponibilidad con nuestro equipo.</a></p>
         </section>
         <section class="section services-section" id="servicios">
             <div class="section-heading"><p class="eyebrow">LO QUE HACEMOS</p><h2>Nuestros servicios</h2></div>
@@ -73,6 +78,15 @@
                 <article><h3>📦 Recepción</h3><p>Recibimos y verificamos los productos.</p></article>
                 <article><h3>🏬 Almacenamiento</h3><p>Organizamos los productos para su conservación.</p></article>
                 <article><h3>🚚 Distribución</h3><p>Coordinamos las entregas a nuestros clientes.</p></article>
+            </div>
+        </section>
+        <section class="section faq-section" id="preguntas">
+            <div class="section-heading"><p class="eyebrow">TE AYUDAMOS</p><h2>Preguntas <span>frecuentes</span></h2><p>Información rápida para que puedas coordinar con Alimex.</p></div>
+            <div class="faq-list">
+                <details><summary>¿Qué tipo de productos distribuye Alimex?</summary><p>Trabajamos con categorías como frutas y verduras, lácteos, granos, alimentos envasados y otras opciones. Consulta disponibilidad para tu pedido.</p></details>
+                <details><summary>¿Cómo puedo consultar disponibilidad?</summary><p>Escríbenos por WhatsApp y cuéntanos qué productos necesitas y para qué tipo de negocio.</p></details>
+                <details><summary>¿Alimex atiende a negocios y familias?</summary><p>Podemos orientarte según tus necesidades. Contacta al equipo para confirmar condiciones y cobertura.</p></details>
+                <details><summary>¿Cómo solicito información o una cotización?</summary><p>Usa el botón de WhatsApp o los datos de contacto de esta página. Nuestro equipo podrá ayudarte con los siguientes pasos.</p></details>
             </div>
         </section>
         <section class="section team-section" id="equipo">
@@ -128,9 +142,22 @@
     <footer class="footer">
         <a href="#inicio" class="logo">Alimex<span>+</span></a>
         <p>Alimentos de calidad, hasta donde los necesites.</p>
-        <div class="footer-links"><a href="#nosotros">Nosotros</a><a href="#productos">Productos</a><a href="#contacto">Contacto</a></div>
+        <div class="footer-links"><a href="#nosotros">Nosotros</a><a href="#productos">Productos</a><a href="#contacto">Contacto</a><a href="#preguntas">Preguntas frecuentes</a></div>
         <p class="copyright">© <span id="year"></span> Alimex. Proyecto educativo.</p>
     </footer>
+
+    <aside class="alimex-assistant" id="alimex-assistant" aria-label="Asistente virtual de Alimex">
+      <button class="assistant-launcher" id="assistant-launcher" aria-expanded="false" aria-controls="assistant-panel"><span class="assistant-orb" aria-hidden="true">A</span><span><strong>Asistente Alimex</strong><small>Atención virtual · Español</small></span><span class="assistant-launcher-icon" aria-hidden="true">✦</span></button>
+      <section class="assistant-panel" id="assistant-panel" hidden>
+        <header class="assistant-head"><div class="assistant-avatar">A<span></span></div><div><strong>Asistente Alimex</strong><small>Tu guía de productos y servicios</small></div><button id="assistant-close" class="assistant-close" aria-label="Cerrar asistente">×</button></header>
+        <div class="assistant-welcome"><span class="assistant-label">BIENVENIDO A ALIMEX</span><p id="assistant-message" aria-live="polite">¡Hola! Te doy la bienvenida a Alimex. Puedo orientarte sobre nuestros productos, servicios y formas de contacto.</p></div>
+        <div class="assistant-quick-actions"><button data-question="productos">Ver productos</button><button data-question="servicios">Nuestros servicios</button><button data-question="contacto">Cómo contactar</button><button data-question="horario">Información general</button></div>
+        <form id="assistant-form" class="assistant-form"><label class="sr-only" for="assistant-input">Escribe tu pregunta</label><input id="assistant-input" type="text" placeholder="Escribe tu pregunta…" autocomplete="off"><button type="submit" aria-label="Enviar pregunta">➤</button></form>
+        <div class="assistant-controls"><button id="assistant-speak" type="button">▶ Escuchar presentación</button><button id="assistant-stop" type="button">Ⅱ Silenciar</button></div>
+        <p class="assistant-disclaimer">Asistente informativa. Para confirmar precios, inventario, cobertura y pedidos, contacta directamente a Alimex.</p>
+      </section>
+    </aside>
+    <div class="presentation-nudge" id="presentation-nudge"><span>✦</span><p><strong>Conoce Alimex</strong><small>Activa la presentación en voz</small></p><button id="presentation-start">Escuchar</button><button id="presentation-dismiss" aria-label="Cerrar aviso">×</button></div>
     <a class="whatsapp-float" href="https://wa.me/18494684483" target="_blank" rel="noopener noreferrer" aria-label="Contactar a Alimex por WhatsApp" style="position:fixed!important;right:22px!important;bottom:22px!important;z-index:99999!important;display:flex!important;align-items:center!important;gap:10px!important;padding:15px 22px!important;border-radius:999px!important;background:#25D366!important;color:#fff!important;font-weight:800!important;font-size:16px!important;text-decoration:none!important;box-shadow:0 8px 24px rgba(0,0,0,.3)!important;visibility:visible!important;opacity:1!important;"><span aria-hidden="true" style="font-size:22px">☏</span><span>WhatsApp</span></a>
 </body>
 </html>
