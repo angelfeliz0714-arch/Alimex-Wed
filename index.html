@@ -26,6 +26,7 @@
             <a href="#categorias">Categorías</a>
             <a href="#servicios">Servicios</a>
             <a href="#consejos">Consejos</a>
+            <a href="#juego-alimentos">Juego saludable</a>
             <a href="#preguntas">FAQ</a>
             <a href="#equipo">Equipo</a>
             <a href="#contacto">Contacto</a>
@@ -80,16 +81,14 @@
             <p class="catalog-note">¿Buscas un producto específico? <a href="#contacto">Consulta disponibilidad con nuestro equipo.</a></p>
         </section>
         <section class="section category-showcase" id="categorias">
-            <div class="section-heading"><p class="eyebrow">EXPLORA ALIMEX</p><h2>Encuentra lo que <span>buscas</span></h2><p>Selecciona una categoría para ir directamente a sus detalles en el catálogo.</p></div>
-            <div class="category-photo-grid">
-                <a class="category-photo-card" href="#cat-frutas"><img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=85" alt="Frutas y verduras frescas" loading="lazy"><div class="category-photo-copy"><span>Frutas y verduras</span><p>Opciones frescas para hogares, colmados y restaurantes.</p><small>Ver categoría ↗</small></div></a>
-                <a class="category-photo-card" href="#cat-lacteos"><img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=900&q=85" alt="Productos lácteos" loading="lazy"><div class="category-photo-copy"><span>Lácteos</span><p>Leche, queso y productos para el día a día.</p><small>Ver categoría ↗</small></div></a>
-                <a class="category-photo-card" href="#cat-granos"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=85" alt="Pan, granos y cereales" loading="lazy"><div class="category-photo-copy"><span>Granos y cereales</span><p>Básicos para preparar comidas y abastecer tu negocio.</p><small>Ver categoría ↗</small></div></a>
-                <a class="category-photo-card" href="#cat-envasados"><img src="https://images.unsplash.com/photo-1604719312566-8912e9c8a213?auto=format&fit=crop&w=900&q=85" alt="Alimentos empacados en tienda" loading="lazy"><div class="category-photo-copy"><span>Alimentos envasados</span><p>Productos prácticos para diferentes necesidades.</p><small>Ver categoría ↗</small></div></a>
-                <a class="category-photo-card" href="#cat-congelados"><img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=900&q=85" alt="Proteínas y alimentos" loading="lazy"><div class="category-photo-copy"><span>Proteínas y congelados</span><p>Alternativas para completar tu lista de compras.</p><small>Ver categoría ↗</small></div></a>
-                <a class="category-photo-card" href="#cat-bebidas"><img src="https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?auto=format&fit=crop&w=900&q=85" alt="Bebidas refrescantes" loading="lazy"><div class="category-photo-copy"><span>Bebidas</span><p>Opciones para acompañar comidas y reuniones.</p><small>Ver categoría ↗</small></div></a>
-            </div>
-        </section>
+  <div class="quality-panel">
+    <div class="quality-copy"><p class="eyebrow">EL SELLO ALIMEX</p><h2>Calidad que mueve <span>tu día</span></h2><p>Conectamos alimentos con hogares y negocios mediante una distribución organizada, atención cercana y compromiso con cada entrega.</p>
+      <div class="quality-points"><div><span>✦</span><p><strong>Selección responsable</strong><small>Atención a la calidad de los productos.</small></p></div><div><span>◈</span><p><strong>Organización y cuidado</strong><small>Procesos pensados para un manejo responsable.</small></p></div><div><span>➜</span><p><strong>Abastecimiento práctico</strong><small>Soluciones para comercios y hogares.</small></p></div></div>
+      <a class="btn btn-primary" href="#contacto">Conoce más de Alimex</a>
+    </div>
+    <div class="quality-visual" aria-label="Ilustración decorativa de distribución de alimentos"><div class="quality-orbit orbit-one"></div><div class="quality-orbit orbit-two"></div><div class="quality-core"><span>ALIMEX</span><b>+</b><small>CALIDAD EN MOVIMIENTO</small></div><div class="quality-float float-top">✦ FRESCURA</div><div class="quality-float float-bottom">↗ DISTRIBUCIÓN</div></div>
+  </div>
+</section>
         <section class="section services-section" id="servicios">
             <div class="section-heading"><p class="eyebrow">LO QUE HACEMOS</p><h2>Nuestros servicios</h2></div>
             <div class="services-grid">
@@ -111,6 +110,17 @@
                 <article class="tip-card"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=900&q=85" alt="Preparación organizada de alimentos" loading="lazy"><div><span>03 · PLANIFICACIÓN</span><h3>Planifica tus compras</h3><p>Haz una lista según las necesidades de tu hogar o negocio y confirma disponibilidad antes de coordinar un pedido.</p><a href="#contacto">Consultar con Alimex →</a></div></article>
             </div>
         </section>
+        <section class="section food-game-section" id="juego-alimentos">
+  <div class="section-heading"><p class="eyebrow">APRENDE JUGANDO</p><h2>Reto <span>Alimex saludable</span></h2><p>Responde, suma puntos y descubre hábitos que pueden ayudarte a cuidar tu alimentación.</p></div>
+  <div class="food-game">
+    <div class="game-topline"><span class="game-chip">🎮 MINI JUEGO</span><span id="game-progress">Pregunta 1 de 6</span><span class="game-score">⭐ Puntos: <b id="game-score">0</b></span></div>
+    <div class="game-progress-track"><div id="game-progress-bar"></div></div>
+    <div class="game-question-area"><div class="game-emoji" id="game-emoji">🥗</div><p class="game-kicker" id="game-kicker">ELIGE LA MEJOR RESPUESTA</p><h3 id="game-question">¿Qué opción ayuda a tener una alimentación variada?</h3><div class="game-answers" id="game-answers">
+      <button type="button" class="game-answer" data-answer="0">Comer distintos grupos de alimentos</button><button type="button" class="game-answer" data-answer="1">Comer solo un tipo de alimento</button><button type="button" class="game-answer" data-answer="2">Evitar todas las frutas</button>
+    </div><div class="game-feedback" id="game-feedback" aria-live="polite"></div><button type="button" class="btn btn-primary game-next" id="game-next" hidden>Siguiente pregunta →</button></div>
+    <div class="game-finish" id="game-finish" hidden><div class="finish-trophy">🏆</div><h3>¡Reto completado!</h3><p id="game-result"></p><button type="button" class="btn btn-primary" id="game-restart">Jugar otra vez ↻</button></div>
+  </div><p class="game-note">Este juego comparte información general, no sustituye la orientación de profesionales de la salud. Las necesidades alimentarias varían según cada persona.</p>
+</section>
         <section class="section faq-section" id="preguntas">
             <div class="section-heading"><p class="eyebrow">TE AYUDAMOS</p><h2>Preguntas <span>frecuentes</span></h2><p>Información rápida para que puedas coordinar con Alimex.</p></div>
             <div class="faq-list">
