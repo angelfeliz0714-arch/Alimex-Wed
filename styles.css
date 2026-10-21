@@ -855,3 +855,10 @@ body{background:#03120d;color:#f2fff5}
 .benefits>div>span strong{display:block!important;color:#f4fff7!important;font-weight:900!important;font-size:15px!important;line-height:1.35;text-shadow:0 1px 5px rgba(0,0,0,.2)}
 .benefits>div>span small{display:block!important;color:#cce7d4!important;font-weight:750!important;font-size:12px!important;line-height:1.5;margin-top:3px}
 .benefits>div{color:#a0ffb6}
+
+
+/* Alto contraste para la franja de beneficios sobre cualquier fondo */
+.benefits{background:#f3fff5!important;color:#07351c!important;border-top:1px solid #a8edbb!important;border-bottom:1px solid #a8edbb!important;border-radius:0 0 18px 18px;box-shadow:0 12px 28px rgba(0,0,0,.16)}
+.benefits>div>span strong{color:#063b20!important;text-shadow:none!important;font-weight:950!important}
+.benefits>div>span small{color:#28583a!important;font-weight:800!important}
+.benefits>div{color:#16833b!important}
