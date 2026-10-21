@@ -764,3 +764,74 @@ body{background:#fff;color:#101c15}
 /* Ajustes finales: navegación sin categorías duplicadas y juego visible cerca del inicio */
 #juego-alimentos{scroll-margin-top:100px}.food-game-section{display:block!important;visibility:visible!important;opacity:1!important}.food-game{position:relative;z-index:1}.game-hero-link{display:inline-flex!important}
 @media(min-width:761px){.food-game-section .section-heading{margin-bottom:28px}}
+
+
+/* ALIMEX AESTHETIC REFRESH — solo apariencia; conserva HTML, textos, fotos y funciones */
+:root{
+ --green:#42ef78;
+ --green-dark:#06271a;
+ --green-light:#c8ffd5;
+ --black:#03110d;
+ --white:#f5fff7;
+ --gray:#b6c9bd;
+ --background:#061811;
+ --border:rgba(99,255,151,.22);
+ --shadow:0 18px 44px rgba(0,0,0,.28);
+}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{background:#03120d;color:#f2fff5}
+.header{background:rgba(2,16,11,.94);border-bottom:1px solid rgba(78,255,133,.22);box-shadow:0 8px 28px rgba(0,0,0,.25);backdrop-filter:blur(16px)}
+.nav a{color:#e7f8eb;transition:color .2s,background .2s,transform .2s}
+.nav a:hover,.nav a.active{color:#8cffab}
+.nav a:last-child{background:linear-gradient(115deg,#18d956,#a4ff70);color:#052313;box-shadow:0 5px 22px rgba(40,255,104,.2)}
+.hero{background:radial-gradient(ellipse at 75% 30%,rgba(31,210,88,.19),transparent 40%),linear-gradient(115deg,#03130d,#062d1b 62%,#03150d);color:#f7fff8;border-bottom:1px solid rgba(77,255,132,.45)}
+.hero:after{background:linear-gradient(90deg,transparent,rgba(62,255,127,.13),transparent)}
+.hero .eyebrow{color:#a6ffba}
+.hero h1 span,.section-heading h2 span{color:#80ff9e}
+.hero-content>p:not(.eyebrow){color:#d0e8d7}
+.button{border:1px solid rgba(110,255,153,.35);border-radius:999px;background:linear-gradient(120deg,#1ed85a,#9bff73);color:#032213;box-shadow:0 8px 24px rgba(36,235,95,.16);transition:transform .22s,box-shadow .22s,filter .22s}
+.button:hover{transform:translateY(-3px);box-shadow:0 13px 28px rgba(36,235,95,.25);filter:saturate(1.12)}
+.hero-secondary,.game-hero-link{background:rgba(3,28,17,.8)!important;color:#a9ffbd!important;border:1px solid rgba(93,255,143,.55)!important}
+.section{background:#061811;color:#effff3}
+.section:nth-of-type(even){background:#092116}
+.section-heading h2{color:#f3fff5}
+.section-heading>p:last-child,.section p{color:inherit}
+.section-heading>p:last-child{color:#bcd4c3}
+.product-card,.tip-card,.team-card,.services-grid article,.contact-card,.contact-form,.about-grid>*,.values-section article{background:linear-gradient(145deg,rgba(10,48,30,.96),rgba(4,25,17,.98));color:#f1fff4;border:1px solid rgba(84,255,139,.23);border-radius:20px;box-shadow:0 12px 30px rgba(0,0,0,.2);overflow:hidden;transition:transform .24s,border-color .24s,box-shadow .24s}
+.product-card:hover,.tip-card:hover,.team-card:hover,.services-grid article:hover,.contact-card:hover{transform:translateY(-5px);border-color:rgba(93,255,145,.68);box-shadow:0 18px 36px rgba(0,0,0,.3),0 0 24px rgba(44,255,112,.07)}
+.product-card h3,.tip-card h3,.team-card h3,.services-grid h3,.contact-card h3{color:#f4fff6}
+.product-card p,.tip-card p,.team-card p,.services-grid p,.contact-card p{color:#bfd7c6}
+.product-card img,.tip-card img,.team-photo,.team-avatar,.category-photo-card img{border-radius:14px}
+.category-photo-card{border:1px solid rgba(92,255,141,.3);border-radius:18px;overflow:hidden;box-shadow:0 12px 28px rgba(0,0,0,.24)}
+.category-photo-card:after{background:linear-gradient(0deg,rgba(0,20,11,.94),rgba(0,20,11,.03) 75%)}
+.category-photo-card span,.category-photo-card small{color:#f4fff6}
+.services-section{background:radial-gradient(ellipse at 50% 0,rgba(25,172,73,.15),transparent 60%),#04170f}
+.services-section .section-heading h2{color:#f3fff5}
+.services-grid article{padding:25px}
+.quality-panel{border:1px solid rgba(105,255,151,.4);box-shadow:0 22px 55px rgba(0,0,0,.3)}
+.food-game-section{background:linear-gradient(140deg,#062318,#0b3824)!important;color:#f4fff6}
+.food-game{background:#f7fff8;color:#092518;border:1px solid rgba(92,255,145,.6);box-shadow:0 20px 48px rgba(0,0,0,.3)}
+.food-game .game-question-area h3{color:#092518}
+.food-game .game-note{color:#c0dfca}
+.game-topline{background:linear-gradient(100deg,#052617,#0c5730)}
+.game-chip{background:#174b2b;color:#baffca}
+.game-answer{border-radius:13px}
+.team-section{background:#04170f}
+.team-card{padding:10px}
+.team-card h3{padding:0 4px}
+.team-card p{padding:0 4px 7px}
+.contact-section{background:radial-gradient(ellipse at 20% 20%,rgba(24,178,73,.13),transparent 45%),#061811}
+.contact-form input,.contact-form textarea,.contact-form select{background:#061b11;color:#effff3;border:1px solid rgba(102,255,151,.3);border-radius:12px}
+.contact-form input:focus,.contact-form textarea:focus{outline:2px solid rgba(88,255,140,.35);border-color:#63f78e}
+.footer{background:#020d09;color:#e9fff0;border-top:1px solid rgba(83,255,137,.25)}
+.footer-links a{color:#c6e5ce}
+.footer .copyright{color:#91b39b;border-top:1px solid rgba(83,255,137,.15)}
+.image-fallback{background:radial-gradient(circle at 50% 25%,#1c6b3d,#082a19 75%);color:#aaffbd;border:1px solid rgba(92,255,141,.25)}
+.game-hero-link:hover{box-shadow:0 8px 24px rgba(36,235,95,.18)}
+::selection{background:#6dff95;color:#032113}
+@media(max-width:760px){
+ .header{backdrop-filter:blur(12px)}
+ .hero{background:radial-gradient(ellipse at 70% 20%,rgba(31,210,88,.16),transparent 48%),linear-gradient(145deg,#03130d,#062d1b)}
+ .product-card,.tip-card,.team-card,.services-grid article{border-radius:16px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.product-card,.tip-card,.team-card,.services-grid article,.contact-card,.button{transition:none}}
