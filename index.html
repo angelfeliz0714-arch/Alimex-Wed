@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Alimex: distribución responsable de alimentos, calidad y atención personalizada en República Dominicana.">
     <title>Alimex | Distribución de Alimentos</title>
-    <link rel="stylesheet" href="styles.css?v=20261021fix1">
+    <link rel="stylesheet" href="styles.css?v=20261021intro2">
     <style>
         .team-grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
         @media (max-width: 700px) { .team-grid { grid-template-columns: 1fr !important; } }
     </style>
-    <script src="script.js?v=20261021fix1" defer></script>
+    <script src="script.js?v=20261021intro2" defer></script>
 </head>
 <body>
-    <div class="alimex-intro" aria-label="Bienvenido a Alimex"><div class="intro-ghost">ALIMEX<span>+</span></div><p>CALIDAD QUE LLEGA A TI</p></div>
+    <div class="alimex-intro" id="alimex-intro" aria-label="Bienvenido a Alimex"><div class="intro-portal"><div class="intro-ring"></div><div class="intro-core">A<span>+</span></div></div><div class="intro-wordmark">ALIMEX</div><p>CALIDAD QUE LLEGA A TI</p></div>
+<script>(function(){var el=document.getElementById("alimex-intro");if(!el)return;function go(){el.classList.add("intro-hidden");el.style.setProperty("display","none","important");}window.setTimeout(go,1000);el.addEventListener("click",go);})();</script>
 <script>/* Cierre independiente para evitar que la bienvenida bloquee la página */(function(){var intro=document.querySelector(".alimex-intro");if(!intro)return;function dismiss(){intro.style.setProperty("display","none","important");intro.style.setProperty("visibility","hidden","important");intro.style.setProperty("pointer-events","none","important");}window.setTimeout(dismiss,2200);intro.addEventListener("click",dismiss);})();</script>
     <header class="header">
         <a href="#inicio" class="logo">Alimex<span>+</span></a>
