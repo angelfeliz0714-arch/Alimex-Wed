@@ -58,13 +58,19 @@ function speak(text) {
   if (!speechSupported) { messageBox.textContent = text + " (La voz no está disponible en este navegador.)"; return; }
   window.speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = "es-ES";
-  utterance.rate = 0.94;
-  utterance.pitch = 1.02;
+  utterance.lang = "es-MX";
+  utterance.rate = 0.90;
+  utterance.pitch = 1.16;
   const voices = window.speechSynthesis.getVoices();
-  const spanishVoice = voices.find(v => /^es(-|_)/i.test(v.lang) && /female|sabina|helena|laura|monica|paulina|google español/i.test(v.name))
-    || voices.find(v => /^es(-|_)/i.test(v.lang));
-  if (spanishVoice) utterance.voice = spanishVoice;
+  const spanishVoices = voices.filter(v => /^es(-|_)/i.test(v.lang));
+  // Preferir una voz femenina en español cuando el navegador o el sistema la tenga instalada.
+  const spanishVoice = spanishVoices.find(v => /female|sabina|helena|laura|luciana|isabela|isabella|sofia|sofía|monica|mónica|paulina|mia|elena|zira|aria|jenny/i.test(v.name))
+    || spanishVoices.find(v => /google.*español|spanish.*female/i.test(v.name))
+    || spanishVoices[0];
+  if (spanishVoice) {
+    utterance.voice = spanishVoice;
+    utterance.lang = spanishVoice.lang;
+  }
   window.speechSynthesis.speak(utterance);
 }
 function showReply(key) {
