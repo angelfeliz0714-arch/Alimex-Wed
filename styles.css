@@ -862,3 +862,10 @@ body{background:#03120d;color:#f2fff5}
 .benefits>div>span strong{color:#063b20!important;text-shadow:none!important;font-weight:950!important}
 .benefits>div>span small{color:#28583a!important;font-weight:800!important}
 .benefits>div{color:#16833b!important}
+
+
+/* Franja de beneficios: verde oscuro como el resto del diseño premium */
+.benefits{background:linear-gradient(110deg,#062719,#0d3b24 52%,#062719)!important;color:#f5fff7!important;border-top:1px solid rgba(115,255,155,.35)!important;border-bottom:1px solid rgba(115,255,155,.35)!important;box-shadow:0 12px 28px rgba(0,0,0,.2)!important}
+.benefits>div>span strong{color:#ffffff!important;font-weight:950!important;text-shadow:0 1px 7px rgba(0,0,0,.3)!important}
+.benefits>div>span small{color:#c8f5d4!important;font-weight:800!important}
+.benefits>div{color:#8dffab!important}
