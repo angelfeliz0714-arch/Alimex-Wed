@@ -129,3 +129,16 @@ const sectionObserver = "IntersectionObserver" in window ? new IntersectionObser
 },{threshold:.45}) : null;
 if (sectionObserver) ["productos","servicios","equipo","contacto"].forEach(id => { const el=document.getElementById(id); if(el) sectionObserver.observe(el); });
 // Por privacidad y para evitar audio inesperado, la presentación de voz comienza cuando el visitante pulsa Escuchar.
+
+
+// Cierra la entrada de bienvenida aunque la animación CSS se quede congelada.
+(() => {
+  const intro = document.querySelector(".alimex-intro");
+  if (!intro) return;
+  const closeIntro = () => {
+    intro.classList.add("intro-hidden");
+    window.setTimeout(() => { if (intro.isConnected) intro.remove(); }, 600);
+  };
+  window.setTimeout(closeIntro, 3000);
+  intro.addEventListener("click", closeIntro, { once: true });
+})();
