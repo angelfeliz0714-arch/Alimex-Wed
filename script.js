@@ -142,3 +142,55 @@ if (sectionObserver) ["productos","servicios","equipo","contacto"].forEach(id =>
   window.setTimeout(closeIntro, 3000);
   intro.addEventListener("click", closeIntro, { once: true });
 })();
+
+
+// Mini juego Alimex: preguntas de alimentación equilibrada.
+(() => {
+  const questions = [
+    {emoji:"🥗",q:"¿Qué ayuda a tener una alimentación variada?",a:["Comer distintos grupos de alimentos","Comer siempre lo mismo","Evitar todas las frutas"],correct:0,why:"Combinar frutas, vegetales, cereales, proteínas y otros alimentos adecuados ayuda a variar los nutrientes."},
+    {emoji:"🍎",q:"¿Cuál es una buena opción para una merienda?",a:["Fruta fresca","Solo caramelos todos los días","Bebida energética como costumbre"],correct:0,why:"La fruta aporta fibra y vitaminas. Puedes combinarla con otros alimentos según tus necesidades."},
+    {emoji:"💧",q:"¿Qué conviene beber con frecuencia para hidratarse?",a:["Agua","Refresco azucarado todo el día","Bebidas energéticas en lugar de agua"],correct:0,why:"El agua suele ser la opción principal para hidratarse."},
+    {emoji:"🥦",q:"¿Qué hábito puede ayudar a cuidar la salud?",a:["Incluir frutas y vegetales regularmente","Eliminar todos los carbohidratos sin orientación","Saltarse todas las comidas"],correct:0,why:"Frutas y vegetales aportan fibra y distintos nutrientes; una alimentación equilibrada también incluye otros grupos."},
+    {emoji:"🍟",q:"¿Qué conviene limitar si se consume muy a menudo?",a:["Productos con mucho azúcar, sal o grasas poco saludables","Agua potable","Vegetales variados"],correct:0,why:"Es recomendable limitar alimentos muy altos en azúcar, sodio o grasas poco saludables y priorizar variedad."},
+    {emoji:"🧊",q:"¿Cómo se deben manejar los alimentos que necesitan frío?",a:["Mantenerlos refrigerados según la etiqueta","Dejarlos todo el día al sol","Descongelarlos sobre la mesa durante horas"],correct:0,why:"Seguir las indicaciones de refrigeración y conservación ayuda a reducir el riesgo de enfermedades transmitidas por alimentos."}
+  ];
+  const root=document.querySelector(".food-game");
+  if(!root)return;
+  let index=0,score=0,answered=false;
+  const $=id=>document.getElementById(id);
+  const render=()=>{
+    answered=false;const item=questions[index];
+    $("game-progress").textContent="Pregunta "+(index+1)+" de "+questions.length;
+    $("game-score").textContent=score;
+    $("game-progress-bar").style.width=(index/questions.length*100)+"%";
+    $("game-emoji").textContent=item.emoji;$("game-question").textContent=item.q;
+    $("game-feedback").textContent="";$("game-feedback").className="game-feedback";
+    $("game-next").hidden=true;$("game-answers").hidden=false;
+    $("game-kicker").textContent="ELIGE LA MEJOR RESPUESTA";
+    $("game-answers").innerHTML=item.a.map((answer,i)=>'<button type="button" class="game-answer" data-answer="'+i+'"><span class="answer-letter">'+String.fromCharCode(65+i)+'</span>'+answer+'</button>').join("");
+    $("game-answers").querySelectorAll("button").forEach(btn=>btn.addEventListener("click",()=>choose(Number(btn.dataset.answer),btn)));
+  };
+  const choose=(choice,btn)=>{
+    if(answered)return;answered=true;const item=questions[index];const correct=choice===item.correct;
+    if(correct)score++;
+    $("game-score").textContent=score;
+    $("game-answers").querySelectorAll("button").forEach(b=>{b.disabled=true;if(Number(b.dataset.answer)===item.correct)b.classList.add("answer-correct");});
+    if(!correct)btn.classList.add("answer-wrong");
+    $("game-feedback").className="game-feedback "+(correct?"feedback-good":"feedback-try");
+    $("game-feedback").textContent=(correct?"¡Muy bien! ":"¡Casi! ")+item.why;
+    $("game-kicker").textContent=correct?"¡RESPUESTA CORRECTA!":"APRENDE ALGO NUEVO";
+    $("game-progress-bar").style.width=((index+1)/questions.length*100)+"%";
+    $("game-next").hidden=false;$("game-next").textContent=index===questions.length-1?"Ver resultado 🏆":"Siguiente pregunta →";
+  };
+  $("game-next").addEventListener("click",()=>{
+    if(!answered)return;
+    if(index<questions.length-1){index++;render();return;}
+    $("game-answers").hidden=true;$("game-next").hidden=true;$("game-emoji").textContent="🏆";$("game-kicker").textContent="RESULTADO FINAL";
+    $("game-question").textContent="¡Terminaste el reto!";
+    $("game-feedback").textContent="";
+    $("game-result").textContent="Conseguiste "+score+" de "+questions.length+" puntos. "+(score===questions.length?"¡Perfecto! Eres un campeón de los buenos hábitos.":score>=4?"¡Buen trabajo! Sigue aprendiendo sobre alimentación saludable.":"¡Buen comienzo! Juega otra vez para practicar.");
+    $("game-finish").hidden=false;$("game-progress").textContent="Reto completado";$("game-progress-bar").style.width="100%";
+  });
+  $("game-restart").addEventListener("click",()=>{index=0;score=0;$("game-finish").hidden=true;render();});
+  render();
+})();
