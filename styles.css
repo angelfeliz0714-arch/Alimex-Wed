@@ -748,3 +748,15 @@ body{background:#fff;color:#101c15}
 @keyframes gameBounce{from{opacity:0;transform:translateY(9px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
 @media(max-width:760px){.quality-panel{grid-template-columns:1fr;gap:12px}.quality-visual{min-height:280px}.quality-orbit{width:235px}.quality-float{font-size:9px}.game-topline{padding:16px}.game-question-area{padding:23px 16px}.game-answer{font-size:14px}}
 @media(prefers-reduced-motion:reduce){.quality-core,.game-emoji,.game-finish{animation:none!important}.game-progress-track div,.game-answer{transition:none!important}}
+
+
+/* Ajustes de visibilidad: juego destacado y respaldo visual si falla un servidor de fotos */
+.game-hero-link{display:inline-flex!important;align-items:center;gap:8px;margin:12px 0 0!important;border:1px solid rgba(51,150,83,.35);border-radius:999px;padding:12px 18px;background:rgba(232,248,236,.9);color:#155d31!important;font-weight:800;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.game-hero-link:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(28,110,55,.15)}
+.image-fallback{min-height:145px;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:18px;text-align:center;background:radial-gradient(circle at 50% 25%,#e6f8eb,#cfe9d7 48%,#b5d8c2);color:#1b6238;border-radius:inherit}
+.image-fallback span{font-size:48px;filter:drop-shadow(0 5px 8px rgba(22,75,42,.12))}
+.image-fallback small{font-size:12px;font-weight:800;letter-spacing:.04em}
+.product-card .image-fallback{height:142px;min-height:142px}
+.tip-card .image-fallback{height:150px;min-height:150px}
+.team-grid .image-fallback{height:220px;min-height:220px}
+@media(max-width:600px){.product-card .image-fallback{height:165px;min-height:165px}}
