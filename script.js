@@ -194,3 +194,9 @@ if (sectionObserver) ["productos","servicios","equipo","contacto"].forEach(id =>
   $("game-restart").addEventListener("click",()=>{index=0;score=0;$("game-finish").hidden=true;render();});
   render();
 })();
+
+
+// Respaldo por si el servidor externo de imágenes no responde.
+document.querySelectorAll("img").forEach(img => {
+  if (img.complete && img.naturalWidth === 0 && img.src) img.dispatchEvent(new Event("error"));
+});
