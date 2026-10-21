@@ -760,3 +760,7 @@ body{background:#fff;color:#101c15}
 .tip-card .image-fallback{height:150px;min-height:150px}
 .team-grid .image-fallback{height:220px;min-height:220px}
 @media(max-width:600px){.product-card .image-fallback{height:165px;min-height:165px}}
+
+/* Ajustes finales: navegación sin categorías duplicadas y juego visible cerca del inicio */
+#juego-alimentos{scroll-margin-top:100px}.food-game-section{display:block!important;visibility:visible!important;opacity:1!important}.food-game{position:relative;z-index:1}.game-hero-link{display:inline-flex!important}
+@media(min-width:761px){.food-game-section .section-heading{margin-bottom:28px}}
